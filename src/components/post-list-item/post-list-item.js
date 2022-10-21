@@ -9,7 +9,7 @@ export default class PostListItem extends Component {
         let classNames = 'app-list-item d-flex justify-content-between';
 
         if (important) {
-            classNames += 'important';
+            classNames += ' !important';
         }
 
         if (like) {
@@ -28,13 +28,13 @@ export default class PostListItem extends Component {
                     type="button"
                     className="btn-star btn-sm"
                     onClick={onToggleImportant}>
-                        <i className="fa fa-star"></i>
+                        <i className="fa fa-facebook"></i>
                     </button>
                     <button
                     type="button"
                     className="btn-trash btn-sm"
                     onClick={onDelete}>
-                        <i className="fa fa-trash-o"></i>
+                        <i className="fa fa-twitter"></i>
                     </button>
                     <i className="fa fa-heart"></i>
                 </div>
